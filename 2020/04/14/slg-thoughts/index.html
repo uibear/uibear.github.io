@@ -46,15 +46,19 @@
   };
 </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="UI Bear&#39;s Blog">
-<meta property="og:url" content="https://uibear.github.io/archives/index.html">
+  <meta name="description" content="SLG游戏全称是Simulation Game，意为模拟策略游戏，与三消休闲类游戏相反，slg更为重度更具策略性，对玩家的门槛要求也更高，其实和二次元一样也是细分领域的游戏类型。在过去的2年半里，我也一直在从事slg游戏的服务器开发，在我看来slg游戏的开发难度还是比业界其他类型游戏难度要高的多(也有可能是我未接触到其他太多类型的游戏开发)，对开发人员的代码质量要求也更为苛刻，希望在后续的文章里可">
+<meta property="og:type" content="article">
+<meta property="og:title" content="SLG常见系统概述">
+<meta property="og:url" content="https://uibear.github.io/2020/04/14/slg-thoughts/index.html">
 <meta property="og:site_name" content="UI Bear&#39;s Blog">
+<meta property="og:description" content="SLG游戏全称是Simulation Game，意为模拟策略游戏，与三消休闲类游戏相反，slg更为重度更具策略性，对玩家的门槛要求也更高，其实和二次元一样也是细分领域的游戏类型。在过去的2年半里，我也一直在从事slg游戏的服务器开发，在我看来slg游戏的开发难度还是比业界其他类型游戏难度要高的多(也有可能是我未接触到其他太多类型的游戏开发)，对开发人员的代码质量要求也更为苛刻，希望在后续的文章里可">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-04-14T08:20:40.145Z">
+<meta property="article:modified_time" content="2020-04-14T09:19:34.836Z">
 <meta property="article:author" content="ZhuWuShuai">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://uibear.github.io/archives/">
+<link rel="canonical" href="https://uibear.github.io/2020/04/14/slg-thoughts/">
 
 
 <script id="page-configurations">
@@ -62,11 +66,11 @@
   CONFIG.page = {
     sidebar: "",
     isHome: false,
-    isPost: false
+    isPost: true
   };
 </script>
 
-  <title>归档 | UI Bear's Blog</title>
+  <title>SLG常见系统概述 | UI Bear's Blog</title>
   
 
 
@@ -176,69 +180,97 @@
           <div class="content">
             
 
+  <div class="posts-expand">
+      
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <span class="collection-header">嗯..! 目前共计 2 篇日志。 继续努力。</span>
-      </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://uibear.github.io/2020/04/14/slg-thoughts/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="ZhuWuShuai">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="UI Bear's Blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          SLG常见系统概述
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-04-14 16:20:40 / 修改时间：17:19:34" itemprop="dateCreated datePublished" datetime="2020-04-14T16:20:40+08:00">2020-04-14</time>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-users"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="firestore-visitors-count"></span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <h1 class="collection-header">2020</h1>
-    </div>
+        <p>SLG游戏全称是Simulation Game，意为模拟策略游戏，与三消休闲类游戏相反，slg更为重度更具策略性，对玩家的门槛要求也更高，其实和二次元一样也是细分领域的游戏类型。在过去的2年半里，我也一直在从事slg游戏的服务器开发，在我看来slg游戏的开发难度还是比业界其他类型游戏难度要高的多(也有可能是我未接触到其他太多类型的游戏开发)，对开发人员的代码质量要求也更为苛刻，希望在后续的文章里可以记录下目前市面上slg游戏常见模块系统的实现细节和坑点，下面简要介绍下各个系统：</p>
+<a id="more"></a>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-04-14T16:20:40+08:00"
-              content="2020-04-14">
-          04-14
-        </time>
-      </div>
-
-      <h2 class="post-title">
-          <a class="post-title-link" href="/2020/04/14/slg-thoughts/" itemprop="url">
-            <span itemprop="name">SLG常见系统概述</span>
-          </a>
-      </h2>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-03-02T15:36:34+08:00"
-              content="2020-03-02">
-          03-02
-        </time>
-      </div>
-
-      <h2 class="post-title">
-          <a class="post-title-link" href="/2020/03/02/deploy-server-environment/" itemprop="url">
-            <span itemprop="name">如何在Windows上搭建开发环境</span>
-          </a>
-      </h2>
-
-    </header>
-  </article>
-
+<h3 id="1-城建"><a href="#1-城建" class="headerlink" title="1.城建"></a>1.城建</h3><p>主要是玩家主城的建筑，一般都是基于城池内的格子划分来实现，主要涉及新建，升级，拆除，移动。服务器按中心格子存储建筑就可以，玩家操作时依靠配置表中指定的大小和中心格子算出碰撞，从而确定各项操作是否合理。</p>
+<h3 id="2-任务成就"><a href="#2-任务成就" class="headerlink" title="2.任务成就"></a>2.任务成就</h3><p>很多游戏中都有这类系统，不同策划案不同的实现方式，一般传统的任务系统，是在敏感事件操作后发送一次event trigger，用来刷新任务列表。</p>
+<h3 id="3-增益Buff"><a href="#3-增益Buff" class="headerlink" title="3.增益Buff"></a>3.增益Buff</h3><p>buff的来源会很多，只要把buff的生效类型统一好，实现起来难度不会很大。</p>
+<h3 id="4-背包"><a href="#4-背包" class="headerlink" title="4.背包"></a>4.背包</h3><p>用来存在各种道具，功能细分为新增、删除、使用，定好存储的结构，难度也不会很高。</p>
+<h3 id="5-商店"><a href="#5-商店" class="headerlink" title="5.商店"></a>5.商店</h3><p>游戏中会有很多存在商店，难点在刷新问题，一般使用时间戳存储下次刷新时间，请求商店数据和购买时根据时间戳出刷新商店即可，不过会存在配置更改后无法立即生效的问题。</p>
+<h3 id="6-活动"><a href="#6-活动" class="headerlink" title="6.活动"></a>6.活动</h3><p>活动系统是运营游戏的关键，不仅可以活跃玩家，测试新的玩法，还能带来收入上显著的提升。对于服务器来说，需要提供web界面和http接口，方便运营查看和开启活动，活动框架的设计应当是越简洁越好，但是由于运营后期不断推出各式活动，能保持框架的简洁和易拓展性质是非常有难度的一件事。</p>
+<h3 id="7-公会"><a href="#7-公会" class="headerlink" title="7.公会"></a>7.公会</h3><p>公会系统的框架设计应该不算太难，但是在分布式的服务器框架里，公会的数据一致性是个很头疼的问题。</p>
+<h3 id="8-部队"><a href="#8-部队" class="headerlink" title="8.部队"></a>8.部队</h3><p>难度在于部队数据的一致性问题，玩家和地图各持有一份，一种可行做法是完全交给地图管理，另一种是以玩家数据为准，做数据的一致性同步。</p>
+<h3 id="9-大地图"><a href="#9-大地图" class="headerlink" title="9.大地图"></a>9.大地图</h3><p>在从事slg服务器开发的这几年里，大地图的各种玩法和设计基本都实现了一遍，主要涉及行军，地图建筑，视野等。视野是指客户端一屏可以看到的地方，常规做法是将玩家看到的作为中心屏，然后将周边的9屏数据下发，从而降低请求频率和帮助行军线的显示。目前主流slg游戏中行军变得更加实时操作感更强，也加入了寻路算法，这个可以后面详细分析下算法。</p>
+<h3 id="10-战斗"><a href="#10-战斗" class="headerlink" title="10.战斗"></a>10.战斗</h3><p>目前我接触到的大地图战斗是及时性的是有过程的，不是碰一下就结算结果的那种，主要难点是战斗框架的算法。</p>
 
     </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/03/02/deploy-server-environment/" rel="prev" title="如何在Windows上搭建开发环境">
+      <i class="fa fa-chevron-left"></i> 如何在Windows上搭建开发环境
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
   </div>
-  
-  
-  
-
-  
-
 
 
           </div>
@@ -289,6 +321,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-城建"><span class="nav-number">1.</span> <span class="nav-text">1.城建</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-任务成就"><span class="nav-number">2.</span> <span class="nav-text">2.任务成就</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-增益Buff"><span class="nav-number">3.</span> <span class="nav-text">3.增益Buff</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-背包"><span class="nav-number">4.</span> <span class="nav-text">4.背包</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-商店"><span class="nav-number">5.</span> <span class="nav-text">5.商店</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-活动"><span class="nav-number">6.</span> <span class="nav-text">6.活动</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-公会"><span class="nav-number">7.</span> <span class="nav-text">7.公会</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-部队"><span class="nav-number">8.</span> <span class="nav-text">8.部队</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9-大地图"><span class="nav-number">9.</span> <span class="nav-text">9.大地图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10-战斗"><span class="nav-number">10.</span> <span class="nav-text">10.战斗</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
